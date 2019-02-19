@@ -171,7 +171,7 @@ export default introspectionResults => (
             const parts = params.target.split('.');
 
             return {
-                filter: { [parts[0]]: { id: params.id } },
+                filter: { [parts[0]]: params.id },
             };
         }
         case GET_ONE:
